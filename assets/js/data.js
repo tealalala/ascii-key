@@ -1,5 +1,3 @@
-// Source Credit: Code Table .NET - http://www.codetable.net/
-
 var data = {
   "a": {
     symbol_name: "Latin Small Letter A",

@@ -1,6 +1,5 @@
 .container {
     display: grid;
-    background-color: $default;
 }
 
 .item-1 {
@@ -25,7 +24,7 @@
 @media screen and (min-width: $mobile) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr;
+        grid-template-rows: 1fr auto auto auto;
         grid-template-areas: 
             "pressedKey"
             "pressedKeyInfo"
@@ -33,7 +32,12 @@
             "madeBy";
         padding: 1rem;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
+    }
+
+    .item-2 {
+        min-height: 4em;
+        max-height: 100%;
     }
 }
 
@@ -47,6 +51,6 @@
             "madeBy     madeBy";
         padding: 1.5rem;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
     }
 }

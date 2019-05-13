@@ -1,4 +1,15 @@
-.container {
+header {
+  border-bottom: 1px solid #8C9A9E;
+  margin-bottom: 4rem;
+  background-color: #000000; }
+
+.logo {
+  padding: 2rem 0.8rem;
+  font-size: 1.5rem;
+  color: #FFFFFF; }
+
+.container-ascii-game,
+.logo {
   margin: 0 auto;
   max-width: 80%; }
 

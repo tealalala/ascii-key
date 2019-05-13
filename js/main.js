@@ -25,5 +25,5 @@ function printKeypress(e) {
 
 function printHexcode(e) {
   let outputPressedKeyHexcode = document.querySelector(".hexcode");
-  outputPressedKeyHexcode.innerHTML = e.charCode - 36;
+  outputPressedKeyHexcode.innerHTML = e.keyCode.toString(16);
 };

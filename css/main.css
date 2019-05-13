@@ -1,18 +1,5 @@
-* {
-  box-sizing: border-box;
-  border: 0;
-  outline: 0;
-  margin: 0;
-  padding: 0; }
-
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth; }
-
-body {
-  margin: 0;
-  box-sizing: border-box;
-  background-color: #D4F5F5;
-  font-size: 1.5rem; }
+.container {
+  margin: 0 auto;
+  max-width: 80%; }
 
 /*# sourceMappingURL=main.css.map */

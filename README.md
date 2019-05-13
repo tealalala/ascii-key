@@ -7,3 +7,6 @@ A project that uses vanilla CSS and JavaScript to detect keyboard presses and ou
 * JavaScript
 * Frontend Frameworks/Libraries
   - [Semantic UI](https://semantic-ui.com/)
+
+## Author
+* [Tea La](https://teala.xyz/)

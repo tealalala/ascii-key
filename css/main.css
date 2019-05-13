@@ -15,43 +15,4 @@ body {
   background-color: #D4F5F5;
   font-size: 1.5rem; }
 
-.container {
-  display: grid; }
-
-.item-1 {
-  grid-area: pressedKey;
-  background-color: pink; }
-
-.item-2 {
-  grid-area: pressedKeyInfo; }
-
-.item-3 {
-  grid-area: history;
-  background-color: skyblue; }
-
-.item-4 {
-  grid-area: madeBy;
-  background-color: salmon; }
-
-@media screen and (min-width: 375px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto auto auto;
-    grid-template-areas: "pressedKey" "pressedKeyInfo" "history" "madeBy";
-    padding: 1rem;
-    width: 100%;
-    min-height: 100vh; }
-
-  .item-2 {
-    min-height: 4em;
-    max-height: 100%; } }
-@media screen and (min-width: 1440px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.2fr 0.2fr;
-    grid-template-areas: "pressedKey pressedKeyInfo" "history    history" "madeBy     madeBy";
-    padding: 1.5rem;
-    width: 100%;
-    min-height: 100vh; } }
-
 /*# sourceMappingURL=main.css.map */

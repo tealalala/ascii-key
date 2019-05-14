@@ -32,17 +32,25 @@
   text-align: center; }
 
 header {
-  border-bottom: 1px solid #8C9A9E;
+  border-bottom: 1px solid #747578;
   margin-bottom: 4rem;
   background-color: #000000; }
+
+.header-items {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  align-items: center; }
 
 .logo {
   padding: 2rem 0.8rem;
   font-size: 1.5rem;
   color: #FFFFFF; }
 
+.credit {
+  color: #FFFFFF; }
+
 .container-ascii-game,
-.logo {
+.header-items {
   margin: 0 auto;
   max-width: 80%; }
 

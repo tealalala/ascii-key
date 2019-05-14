@@ -21,4 +21,15 @@
     }
     .keypress-outputs {
       padding-top: 1rem;
+      font-size: 1.5rem;
     }
+
+.history-wrapper {}
+    .history-items {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      justify-items: center;
+      padding-top: 1rem;
+      font-size: 1.5rem;
+    }
+        .history-items > span {}

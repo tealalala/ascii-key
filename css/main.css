@@ -1,3 +1,8 @@
+.keycode-wrapper,
+.decimal-code-wrapper,
+.hexcode-wrapper {
+  margin-bottom: 3rem; }
+
 .letter-text,
 .letter {
   margin: 0 auto;
@@ -11,10 +16,20 @@
   font-weight: 700;
   line-height: 5.5rem; }
 
-.keycode-wrapper,
-.decimal-code-wrapper,
-.hexcode-wrapper {
-  margin-bottom: 3rem; }
+.keypress-outputs {
+  padding-top: 1rem;
+  font-size: 1.5rem; }
+
+.history-items {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  justify-items: center;
+  padding-top: 1rem;
+  font-size: 1.5rem; }
+
+.footer-wrapper {
+  margin: 0 auto;
+  text-align: center; }
 
 header {
   border-bottom: 1px solid #8C9A9E;

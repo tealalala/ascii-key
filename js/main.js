@@ -37,6 +37,7 @@ function printHexcode(e) {
 function printHistoryToDOM(e) {
   historyArr.push(e.key);
   if (historyArr.length > 10) {
+    // historyArr.shift();
     historyArr.shift();
     var elRemove = document.querySelector("span");
     var parent = elRemove.parentNode.removeChild(elRemove);

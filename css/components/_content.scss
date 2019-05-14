@@ -1,3 +1,9 @@
+.keycode-wrapper,
+.decimal-code-wrapper,
+.hexcode-wrapper {
+  margin-bottom: 3rem;
+}
+
 .letter-text,
 .letter {
   margin: 0 auto;
@@ -13,10 +19,6 @@
       font-weight: 700;
       line-height: 5.5rem;
     }
-
-
-.keycode-wrapper,
-.decimal-code-wrapper,
-.hexcode-wrapper {
-  margin-bottom: 3rem;
-}
+    .keypress-outputs {
+      padding-top: 1rem;
+    }

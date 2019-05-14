@@ -54,6 +54,6 @@ function printHistoryToDOM(e) {
   console.log(el);
   console.log(newEl);
   console.log(createEl);
-  
+
   console.log(`After: ${historyArr}`);
 };

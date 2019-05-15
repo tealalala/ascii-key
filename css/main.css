@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
 .proceed-to-form {
   display: grid;
   grid-template-rows: 0.2fr 1fr;
@@ -58,6 +69,8 @@
   text-align: center; }
 
 header {
+  position: fixed;
+  width: 100%;
   border-bottom: 1px solid #747578;
   margin-bottom: 4rem;
   background-color: #000000; }
@@ -74,6 +87,9 @@ header {
 
 .credit {
   color: #FFFFFF; }
+
+.container-ascii-game {
+  padding-top: 12rem; }
 
 .container-ascii-form,
 .container-ascii-game,

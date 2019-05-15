@@ -1,0 +1,21 @@
+.proceed-to-form {
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  justify-items: center;
+}
+    .proceed-to-form-text,
+    .proceed-to-form-arrow  > img {
+      animation: pulse 4s infinite;
+    }
+
+    .proceed-to-form-text {
+      font-size: 2rem;
+      padding-top: 2.5rem;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px dashed skyblue;
+    }
+
+    .proceed-to-form-arrow {
+      max-width: 5%;
+    }

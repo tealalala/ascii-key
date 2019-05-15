@@ -1,10 +1,10 @@
 window.addEventListener("keypress", printKeypress);
 
 var historyArr = [];
-console.log(`Before: ${historyArr}`);
+// console.log(`Before: ${historyArr}`);
 
 function printKeypress(e) {
-  console.log(e);
+  // console.log(e);
   // console.log(e.key);
   let pressedKey = e.key;
   let pressedKeyCode = e.keyCode;
@@ -41,9 +41,9 @@ function printHistoryToDOM(e) {
     historyArr.shift();
     var elRemove = document.querySelector("span");
     var parent = elRemove.parentNode.removeChild(elRemove);
-    console.log(`elRemove: ${elRemove}`);
-    console.log(`parentNode: ${parent}`);
-    console.log(`historyArr: ${historyArr}`);
+    // console.log(`elRemove: ${elRemove}`);
+    // console.log(`parentNode: ${parent}`);
+    // console.log(`historyArr: ${historyArr}`);
   }
 
   var el = document.querySelector(".history-items");
@@ -52,11 +52,11 @@ function printHistoryToDOM(e) {
   newEl.appendChild(createEl);
   el.appendChild(newEl);
 
-  console.log(el);
-  console.log(newEl);
-  console.log(createEl);
-
-  console.log(`After: ${historyArr}`);
+  // console.log(el);
+  // console.log(newEl);
+  // console.log(createEl);
+  //
+  // console.log(`After: ${historyArr}`);
 };
 
 
@@ -66,4 +66,27 @@ document.querySelector(".proceed-to-form-arrow").addEventListener("click", downA
 
 function downArrowIsClicked(e) {
   location.href = "#ascii-form";
+};
+
+
+////////////////
+
+document.querySelector("#submit-form").addEventListener("click", submitASCIItoTable);
+
+function submitASCIItoTable(e) {
+    console.log("successful click: submit-form");
+    console.log(e);
+    var checkValue = document.querySelector(".ascii-input").value;
+    console.log(checkValue);
+
+    var table = document.querySelector(".table");
+    var row = table.insertRow(-1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    cell1.innerHTML += "1";
+    cell2.innerHTML += "1";
+    cell3.innerHTML += "1";
+    cell4.innerHTML += "1";
 };

@@ -78,10 +78,10 @@
           <div class="two fields">
             <div class="field">
               <label>ASCII Key</label>
-              <input placeholder="Enter one ASCII key" type="text">
+              <input placeholder="Enter one ASCII key" type="text" maxlength="1" class="ascii-input" name="ascii-input-value">
             </div>
           </div>
-          <div class="ui submit button">Submit</div>
+          <div class="ui submit button" id="submit-form">Submit</div>
         </div>
       </section>
 
@@ -89,7 +89,6 @@
         <table class="ui celled table">
           <thead>
             <tr>
-            <th>Order</th>
             <th>You pressed this key</th>
             <th>Keycode Number</th>
             <th>Decimal Code</th>
@@ -97,11 +96,10 @@
           </tr></thead>
           <tbody>
             <tr>
-              <td data-label="Order">0</td>
-              <td data-label="Name">1</td>
-              <td data-label="Age">2</td>
-              <td data-label="Job">3</td>
-              <td data-label="Job2">4</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
             </tr>
           </tbody>
         </table>

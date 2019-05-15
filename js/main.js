@@ -58,3 +58,12 @@ function printHistoryToDOM(e) {
 
   console.log(`After: ${historyArr}`);
 };
+
+
+/////////////////
+
+window.addEventListener("click", downArrowIsClicked);
+
+function downArrowIsClicked(e) {
+  location.href = "#ascii-form";
+};

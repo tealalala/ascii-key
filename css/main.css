@@ -17,6 +17,13 @@
 .proceed-to-form-arrow {
   max-width: 5%; }
 
+.container-ascii-form {
+  padding-top: 20rem;
+  padding-bottom: 20rem; }
+
+.search-item {
+  margin-bottom: 2rem; }
+
 .keycode-wrapper,
 .decimal-code-wrapper,
 .hexcode-wrapper {
@@ -68,6 +75,7 @@ header {
 .credit {
   color: #FFFFFF; }
 
+.container-ascii-form,
 .container-ascii-game,
 .header-items {
   margin: 0 auto;

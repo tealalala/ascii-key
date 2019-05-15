@@ -62,7 +62,7 @@ function printHistoryToDOM(e) {
 
 /////////////////
 
-window.addEventListener("click", downArrowIsClicked);
+document.querySelector(".proceed-to-form-arrow").addEventListener("click", downArrowIsClicked);
 
 function downArrowIsClicked(e) {
   location.href = "#ascii-form";

@@ -13,10 +13,8 @@
 // 1-1 - Print Keypresses to DOM
 window.addEventListener("keypress", printKeypress);
 window.onkeydown = function(e) {
-  if (e.keyCode == 32 && e.target == document.body) {
-    e.preventDefault();
-  }
-}
+  return !(e.keyCode == 32 && e.target == document.body);
+}; 
 
 let historyArr = [];
 
@@ -88,17 +86,13 @@ function downArrowIsClicked(e) {
 document.querySelector("#submit-form").addEventListener("click", submitASCIItoTable);
 
 function submitASCIItoTable(e) {
-    console.log("successful click: submit-form");
-    console.log(e);
     let inputValue = document.querySelector(".ascii-input").value;
+    console.log("successful click: submit-form");
     console.log(inputValue);
 
     if (inputValue) {
       makeTheTableRows(inputValue);
-      let form = document.querySelector(".ascii-form-input").reset();
-    } else if (inputValue === " ") {
-      makeTheTableRows(inputValue, space);
-    } else {
+      var form = document.querySelector(".ascii-form-input").reset();
       return false;
     }
 };

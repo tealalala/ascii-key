@@ -12,8 +12,13 @@
 
 // 1-1 - Print Keypresses to DOM
 window.addEventListener("keypress", printKeypress);
+window.onkeydown = function(e) {
+  if (e.keyCode == 32 && e.target == document.body) {
+    e.preventDefault();
+  }
+}
 
-var historyArr = [];
+let historyArr = [];
 
 function printKeypress(e) {
   let pressedKey = e.key;
@@ -85,20 +90,37 @@ document.querySelector("#submit-form").addEventListener("click", submitASCIItoTa
 function submitASCIItoTable(e) {
     console.log("successful click: submit-form");
     console.log(e);
-    var inputValue = document.querySelector(".ascii-input").value;
+    let inputValue = document.querySelector(".ascii-input").value;
     console.log(inputValue);
 
-    var table = document.querySelector(".table");
-    var row = table.insertRow(-1);
-    var cell1 = row.insertCell(0);
-    var cell2 = row.insertCell(1);
-    var cell3 = row.insertCell(2);
-    var cell4 = row.insertCell(3);
-    cell1.innerHTML += printPressedKeyToTable(inputValue);
-    cell2.innerHTML += printKeyCodeToTable(inputValue);
-    cell3.innerHTML += printKeyCodeToTable(inputValue);
-    cell4.innerHTML += printHexcodeToTable(inputValue);
+    if (inputValue) {
+      makeTheTableRows(inputValue);
+      let form = document.querySelector(".ascii-form-input").reset();
+    } else if (inputValue === " ") {
+      makeTheTableRows(inputValue, space);
+    } else {
+      return false;
+    }
 };
+      function makeTheTableRows(inputValue) {
+        let table = document.querySelector(".table");
+        let row = table.insertRow(-1);
+        let cell1 = row.insertCell(0);
+        let cell2 = row.insertCell(1);
+        let cell3 = row.insertCell(2);
+        let cell4 = row.insertCell(3);
+
+        if (inputValue.charCodeAt(0) === 32) {
+          cell1.innerHTML += "space bar";
+        } else {
+          cell1.innerHTML += printPressedKeyToTable(inputValue);
+        }
+
+        cell2.innerHTML += printKeyCodeToTable(inputValue);
+        cell3.innerHTML += printKeyCodeToTable(inputValue);
+        cell4.innerHTML += printHexcodeToTable(inputValue);
+      };
+
       function printPressedKeyToTable(e) {
         return e;
       };

@@ -26,28 +26,31 @@
             <div class="column keypress-wrapper">
               <div class="letter-text">
                 <h2>You pressed this key:</h2>
-                <!-- <p>Note: These keypresses are not detected: caps lock, shift, tab.</p> -->
+                <div class="letter">Enter a key!</div>
               </div>
-              <div class="letter">Enter a key!</div>
+              <div class="letter-note">
+                <h3>Note</h3>
+                <p>These keypresses are not detected: alt, arrow keys, caps lock, cmd, ctrl, esc, F keys (F1, F2, etc.), fn, option, shift, tab.</p>
+              </div>
             </div>
             <div class="column keypress-outputs">
               <div class="keycode-wrapper">
                 <div class="keycode-text">
                   <h2>Keycode Number</h2>
                 </div>
-                <div class="keycode">2</div>
+                <div class="keycode">👋</div>
               </div>
               <div class="decimal-code-wrapper">
                 <div class="decimal-code-text">
                   <h2>Decimal Code</h2>
                 </div>
-                <div class="decimal-code">3</div>
+                <div class="decimal-code">👋</div>
               </div>
               <div class="hexcode-wrapper">
                 <div class="hexcode-text">
                   <h2>Hexcode</h2>
                 </div>
-                <div class="hexcode">4</div>
+                <div class="hexcode">👋</div>
               </div>
             </div>
           </div>
@@ -79,10 +82,12 @@
           <div class="two fields">
             <div class="field">
               <label>ASCII Key</label>
-              <input placeholder="Enter one ASCII key" type="text" maxlength="1" class="ascii-input" name="ascii-input-value">
+              <form class="ascii-form-input">
+                <input placeholder="Enter one ASCII key" type="text" maxlength="1" class="ascii-input" name="ascii-input-value">
+                <button class="ui submit button" id="submit-form">Submit</button>
+              </form>
             </div>
           </div>
-          <div class="ui submit button" id="submit-form">Submit</div>
         </div>
       </section>
 

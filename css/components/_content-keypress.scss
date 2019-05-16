@@ -10,7 +10,11 @@
   text-align: center;
 }
 
-.keypress-wrapper{}
+.keypress-wrapper{
+  display: grid;
+  grid-template-rows: 1fr 0.2fr;
+  justify-content: space-between;
+}
     .letter-text {
       margin-bottom: 2rem;
     }

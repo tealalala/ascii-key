@@ -2,7 +2,6 @@ header {
   position: fixed;
   width: 100%;
   border-bottom: 1px solid $neutral-color;
-  margin-bottom: 4rem;
   background-color: #000000;
 }
     .header-items {
@@ -11,7 +10,7 @@ header {
       align-items: center;
     }
         .logo {
-          padding: 2rem 0.8rem;
+          padding: 1.5rem 0.8rem;
           font-size: 1.5rem;
           color: #FFFFFF;
         }

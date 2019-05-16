@@ -60,9 +60,20 @@ html {
 .history-items {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: auto;
   justify-items: center;
   padding-top: 1rem;
   font-size: 1.5rem; }
+
+.history-items > span {
+  border: 2px solid pink;
+  background: pink;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  margin: 1rem;
+  padding: 1.5rem;
+  transition: background 1s linear; }
 
 .footer-wrapper {
   margin: 0 auto;
@@ -72,7 +83,6 @@ header {
   position: fixed;
   width: 100%;
   border-bottom: 1px solid #747578;
-  margin-bottom: 4rem;
   background-color: #000000; }
 
 .header-items {
@@ -81,7 +91,7 @@ header {
   align-items: center; }
 
 .logo {
-  padding: 2rem 0.8rem;
+  padding: 1.5rem 0.8rem;
   font-size: 1.5rem;
   color: #FFFFFF; }
 
@@ -89,7 +99,7 @@ header {
   color: #FFFFFF; }
 
 .container-ascii-game {
-  padding-top: 12rem; }
+  padding-top: 9rem; }
 
 .container-ascii-form,
 .container-ascii-game,

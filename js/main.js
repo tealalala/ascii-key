@@ -10,29 +10,31 @@ function printKeypress(e) {
   let pressedKeyCode = e.keyCode;
   let pressedKeyDecimal = e.charCode;
 
-  // KeyOutput
-  let outputPressedKey = document.querySelector(".letter");
-  outputPressedKey.innerHTML = pressedKey;
-
-  // Keycode Output
-  let outputPressedKeyCode = document.querySelector(".keycode");
-  outputPressedKeyCode.innerHTML = pressedKeyCode;
-
-  // Decimal Code Output
-  let outputPressedKeyDecimal = document.querySelector(".decimal-code");
-  outputPressedKeyDecimal.innerHTML = pressedKeyDecimal;
-
-  // Hexcode Output
+  printPressedKey(e);
+  printPressedKeyCode(e);
+  printDecimalCode(e);
   printHexcode(e);
-
-  // Print History to DOM
   printHistoryToDOM(e);
 };
+      function printPressedKey(e) {
+        let outputPressedKey = document.querySelector(".letter");
+        outputPressedKey.innerHTML = e.key;
+      };
 
-function printHexcode(e) {
-  let outputPressedKeyHexcode = document.querySelector(".hexcode");
-  outputPressedKeyHexcode.innerHTML = e.keyCode.toString(16);
-};
+      function printPressedKeyCode(e) {
+        let outputPressedKeyCode = document.querySelector(".keycode");
+        outputPressedKeyCode.innerHTML = e.keyCode;
+      }
+
+      function printDecimalCode(e) {
+        let outputPressedKeyDecimal = document.querySelector(".decimal-code");
+        outputPressedKeyDecimal.innerHTML = e.charCode;
+      }
+
+      function printHexcode(e) {
+        let outputPressedKeyHexcode = document.querySelector(".hexcode");
+        outputPressedKeyHexcode.innerHTML = e.keyCode.toString(16);
+      };
 
 function printHistoryToDOM(e) {
   historyArr.push(e.key);

@@ -1,6 +1,8 @@
 # ASCII Key
 A project that uses vanilla CSS and JavaScript to detect keyboard presses and outputs the hexadecimal code and decimal code.
 
+![ASCII Key GIF](https://github.com/tealalala/ascii-key/blob/master/ascii-key.gif)
+
 ## Table of Contents
 1. [Running Locally](#1-running-locally)
 2. [Technologies Used](#2-technologies-used)
